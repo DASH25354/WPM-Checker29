@@ -127,12 +127,13 @@
 
 <!-- テキスト -->
 <div id="text">
-【25】A strong typhoon hit Cebu and other parts of the central Philippines. Many towns were under water. At least 85 people died, and hundreds of thousands left their homes. In Cebu, at least 49 people died. Seventy-five people are missing, and 17 are hurt. People stayed on rooftops to be safe. Cars and big boxes moved quickly in the streets with the flood. The death number may go up. A military helicopter crashed on Mindanao island, south of Cebu. Six crew members died. The typhoon brought heavy rain and strong wind. Power was out in many places. Roads were blocked, and help was slow in some areas. People need clean water, food, and dry clothes. Many families need a safe place to sleep. Workers and volunteers are trying to give help and fix roads. It will take time to repair homes and schools. Many people are sad and afraid, but they hope for support.</div>
+【29】Black Friday is the Friday after Thanksgiving in the United States. It is the start of holiday shopping. Many stores have big sales and special deals. People line up early. Some buy in stores, and many buy online. The word “Black” can mean that stores move from losing money to making money. Over time, Black Friday spread to other countries, like Japan. Big chains also make sales there. Shoppers plan by checking prices, making a wish list, and reading ads. Stores plan by adding stock, staff, and safety steps to help large crowds. There can be long lines and some chaos, but many people now like online deals. Sales often start early and go on through the weekend to Cyber Monday. Black Friday is an important day for business and culture. It changes how stores sell and how people buy during the holiday season.
+</div>
 
 <!-- 音声再生（英文の下、ボタンの上） -->
 <div class="audio-wrapper">
   <audio controls>
-    <source src="25.mp3" type="audio/mpeg">
+    <source src="29.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
 </div>
@@ -145,11 +146,14 @@
 <div id="questions">
   <h3>Quiz</h3>
   <label>Select all options below that match the content of the passage.</label></span>
-  <span class="question-option"><input type="checkbox" class="q1" value="a"> A strong typhoon hit Cebu; many died or fled, and rescue work is ongoing.
+  <span class="question-option"><input type="checkbox" class="q1" value="a"> Black Friday starts holiday shopping. Stores have big sales, and many people buy online. It shapes how stores plan and how people shop. 
 </span>
-  <span class="question-option"><input type="checkbox" class="q1" value="b"> Cebu had a small storm, and people quickly returned home.</span>
-  <span class="question-option"><input type="checkbox" class="q1" value="c"> The typhoon caused floods, deaths, missing people, and damage in central Philippines. </span>
-  <span class="question-option"><input type="checkbox" class="q1" value="d"> A helicopter crash was the only event in Cebu. </span>
+  <span class="question-option"><input type="checkbox" class="q1" value="b"> Black Friday is a small local party after Thanksgiving. People only enjoy food and parades. It has no business effect.</span>
+  <span class="question-option"><input type="checkbox" class="q1" value="c"> Black Friday is a government rule day when all stores must cut prices the same.
+ </span>
+  <span class="question-option"><input type="checkbox" class="q1" value="d"> The Friday after Thanksgiving has big deals and doorbusters. Stores move “into the black,” and the event now spreads worldwide and to Cyber Monday. 
+
+ </span>
 </div>
 
 <div id="result"></div>
@@ -169,8 +173,8 @@ function finishReading() {
   if (!startTime) return alert("Please start reading first!");
   const elapsedSec = (Date.now() - startTime) / 1000;
 
-  // 正解選択肢: a, c
-  const correctAnswers = ["a", "c"];
+  // 正解選択肢: a, d
+  const correctAnswers = ["a", "d"];
   const checked = Array.from(document.querySelectorAll(".q1:checked")).map(el => el.value);
   const numCorrect = checked.filter(val => correctAnswers.includes(val)).length;
   const numIncorrect = checked.filter(val => !correctAnswers.includes(val)).length;
@@ -195,6 +199,7 @@ function finishReading() {
 
 </body>
 </html>
+
 
 
 
